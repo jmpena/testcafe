@@ -6,5 +6,7 @@ fixture `Getting Started`
 test('My first test', async t => {
     await t
         .typeText('#developer-name', 'John Smith')
-        .click('#submit-button');
+        .click('#submit-button')
+        .takeScreenshot();
+
 });
